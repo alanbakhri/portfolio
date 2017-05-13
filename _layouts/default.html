@@ -7,21 +7,24 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/common.css">
 </head>
 <body>
-  
-  <header>
-    <hgroup>
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
-    </hgroup>
-    {% include navigation.html %}
-  </header>
-  
-  {{ content }}
-  
-  <footer>
-    {% include navigation.html %}
-    <p>&copy; 2017 created by alan bakhri</p>
-  </footer>
+  <div class="wrapper">
+    <header id="header">
+      <hgroup>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+      </hgroup>
+      {% include navigation.html navclass='nav-top' %}
+    </header>
+    
+    <main id="main">
+      {{ content }}
+    </main>
+    
+    <footer id="footer">
+      {% include navigation.html navclass='nav-bottom' %}
+      <p>&copy; 2017 created by alan bakhri</p>
+    </footer>
+  </div>
 
 </body>
 </html>
