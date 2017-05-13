@@ -1,3 +1,13 @@
+# site settings
+title: Alan Bakhri
+email: alanbakhri@gmail.com
+description: > 
+  Website ini menunjukan semua hasil karya (portfolio) yang telah saya kerjakan.
+baseurl: /portfolio # subpath of site e.g /blog
+url: https://alanbakhri.github.io # base hostname & protocol for the site e.g http://example.com 
+twitter_username: alanbakhry
+github_username: alanbakhri
+
+# build settings
 markdown: redcarpet
-baseurl: /portfolio
 exclude: ['README.md']
