@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ site.title }} - {{ page.title }}</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/common.css">
 </head>
 <body>
   
@@ -13,18 +13,13 @@
       <h1>{{ site.title }}</h1>
       <p>{{ site.description }}</p>
     </hgroup>
-    <nav>
-      <ul>
-        <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
-        <li><a href="{{ site.baseurl }}/portfolio.html">Portfolio</a></li>
-        <li><a href="{{ site.baseurl }}/news.html">News</a></li>
-      </ul>
-    </nav>
+    {% include navigation.html %}
   </header>
   
   {{ content }}
   
   <footer>
+    {% include navigation.html %}
     <p>&copy; 2017 created by alan bakhri</p>
   </footer>
 
