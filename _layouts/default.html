@@ -3,28 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Alan Bakhri - Home</title>
+  <title>{{ site.title }} - {{ page.title }}</title>
   <link rel="stylesheet" href="">
 </head>
 <body>
   
   <header>
     <hgroup>
-      <h1>Alan Bakhri</h1>
-      <p>Website ini menunjukan semua hasil karya (portfolio) yang telah saya kerjakan.
-</p>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
     </hgroup>
     <nav>
       <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/portfolio.html">Portfolio</a></li>
-        <li><a href="/news.html">News</a></li>
+        <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+        <li><a href="{{ site.baseurl }}/portfolio.html">Portfolio</a></li>
+        <li><a href="{{ site.baseurl }}/news.html">News</a></li>
       </ul>
     </nav>
   </header>
   
-  <h1>Home</h1>
-
+  {{ content }}
   
   <footer>
     <p>&copy; 2017 created by alan bakhri</p>
