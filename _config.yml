@@ -4,10 +4,13 @@ email: alanbakhri@gmail.com
 description: > 
   Website ini menunjukan semua hasil karya (portfolio) yang telah saya kerjakan.
 baseurl: /portfolio # subpath of site e.g /blog
-url: https://alanbakhri.github.io # base hostname & protocol for the site e.g http://example.com 
+# url: # base hostname & protocol for the site e.g http://example.com 
 twitter_username: alanbakhry
 github_username: alanbakhri
 
 # build settings
+encoding: utf-8
 markdown: redcarpet
-exclude: ['README.md']
+highlighter: pygments
+exclude: 
+  - README.md
