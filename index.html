@@ -6,7 +6,7 @@ title: Home
 <h1>Home</h1>
 
 <ul>
-  {% for news in site.categories.recently-discovered limit:6 %}
+  {% for news in site.categories.recently-discovered limit:4 %}
   <li>
     <a href="">{{ news.title }}</a>
     <p>{{ news.meta }}</p>
