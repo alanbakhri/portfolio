@@ -1,30 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ site.title }} - {{ page.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/common.css">
-</head>
+{% include head.html %}
 <body>
-  <div class="wrapper">
-    <header id="header">
-      <hgroup>
-        <h1>{{ site.title }}</h1>
-        <p>{{ site.description }}</p>
-      </hgroup>
-      {% include navigation.html navclass='nav-top' %}
-    </header>
-    
+  <div class="site-container">
+    {% include header.html %}
+
     <main id="main">
       {{ content }}
     </main>
-    
-    <footer id="footer">
-      {% include navigation.html navclass='nav-bottom' %}
-      <p>&copy; 2017 created by alan bakhri</p>
-    </footer>
-  </div>
 
+    {% include footer.html %}
+  </div>
 </body>
 </html>
